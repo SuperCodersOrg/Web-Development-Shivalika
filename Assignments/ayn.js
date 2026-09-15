@@ -3,8 +3,8 @@ const path = require("path");
 const { parseCookie } = require("undici-types");
 
 const sourceDir = process.argv[2];
-const destinationDir = process.argv[2];
-const extension = ".txt";
+const destinationDir = process.argv[3];
+const extension = process.argv[4];
 
 fs.mkdir(destinationDir, { recursive: true }, (err) => {
     if (err) {
