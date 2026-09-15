@@ -3,7 +3,7 @@ const path = require("path");
 
 const sourceDir = process.argv[2];
 const destinationDir = process.argv[3];
-const extension = ".txt";
+const extension = process.argv[4];
 
 if (!fs.existsSync(destinationDir)) {
     fs.mkdirSync(destinationDir);
